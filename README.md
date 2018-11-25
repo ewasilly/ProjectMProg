@@ -41,7 +41,7 @@ I liked this example of one of the projects of recent years. I would like to mak
 https://jaspernaberman.github.io/Programming-Project/Scripts/HTML/index.html
 
 ##### External components
-At the moment, this part of the proposal is difficult to formulate due to my personal lack of experience and knowledge of data visualization libraries. I can only assume that I will be needing libraries such as D3, panda and csv in order to get the data that I want to use and create the visualizations that I have in mind.
+At the moment, this part of the proposal is difficult to formulate due to my personal lack of experience and knowledge of data visualization libraries and other components. I can only assume that I will be needing components such as D3, JavaScript, HTML, CSS, panda and csv in order to get the data that I want to use and create the visualizations that I have in mind.
 
 ##### Hardest parts
 The hardest parts will be figuring out how the different libraries work and getting more confidence in programming the data visualizations.
