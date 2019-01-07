@@ -16,7 +16,7 @@ Main features:
 - Pie chart that shows the proportion of the Dutch population that smokes.
     - When clicked on the 'smokers' part of the pie chart, another pie chart shows how the smokers are spread over different educational levels.
     - Both pie charts can be filtered by gender (male or female).
-- A line graph will represent the trend of smokers in the Dutch population over the last 2,5 decades.
+- When the 'smoker' part of the pie chart is clicked on, a line graph will show which represents the trend of smokers in the Dutch population over the last 2,5 decades.
     - When the mouse hovers over the line, exact information appears of the year and percentage of smokers at that point in the line graph.
     - The line graph can also be filtered by gender (male or female).
 - The third and last visualization is a bar chart, representing the percentage of people that are smokers and the percentage of people that have tried to quit smoking in the past 12 months, classified by educational level.
@@ -27,6 +27,7 @@ Main features:
 
 ##### Optional implementations
 - Perhaps a graph with more information about the costs of smoking and/or the health complications of smoking. A suited dataset for these implementations has yet to be found.
+- I have not made a pie chart before, which is why I would like to try and make that first. If that works out well and I have enough time left, I would like to make that a donut chart.
 
 ### Prerequisites
 ##### Links to datasets:
