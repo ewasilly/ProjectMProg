@@ -22,8 +22,8 @@ Main features:
 - The third and last visualization is a bar chart, representing the percentage of people that are smokers and the percentage of people that have tried to quit smoking in the past 12 months, classified by educational level.
     - The user can filter the information in the bar chart by age categories.
 
-![alt text](image_1.JPG)
-![alt text](image_2.JPG)
+![alt text](doc/image_1.JPG)
+![alt text](doc/image_2.JPG)
 
 ##### Optional implementations
 - Perhaps a graph with more information about the costs of smoking and/or the health complications of smoking. A suited dataset for these implementations has yet to be found.
