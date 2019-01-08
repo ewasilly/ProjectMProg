@@ -16,7 +16,7 @@ Both datasets will be transformed into a json-file. This will be done in Python 
 
 The diagram below shows how the different components of the code for the data visualizations interact together.
 
-![alt text](doc/image_3.JPG)
+![alt text](doc/image_3.PNG)
 
 
 First, the data is downloaded as a csv-file. The next step in the diagram is the converter. This is a python file which uses pandas in order to convert the csv-files to json-files. Once the data is present in json format, the data can be used to write the code for the pie chart, line graph and bar chart in JavaScript.
