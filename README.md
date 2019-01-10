@@ -1,6 +1,8 @@
 # Project Proposal
 #### Ewa Sillem
 
+ https://ewasilly.github.io/ProjectMProg/
+
 ### Summary goals
 The goal of this data visualization project is to create a better view of the relationship between educational level and smoking behavior, in order to reinforce more effective smoking prevention programs.
 
