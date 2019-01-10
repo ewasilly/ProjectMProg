@@ -2,12 +2,15 @@ import json
 import csv
 import pandas as pd
 
-INFILE = # name of infile
-OUTFILE = # name of outfile
+INFILE = 'data_pie_bar.csv'
+OUTFILE = 'data_pie_bar.json'
 
 """Convert a csv file into a JSON file"""
-data = pd.read_csv(INFILE, sep=';')
-data.to_json(OUTFILE)
+df = pd.read_csv(INFILE, sep=';')
+#df = df.apply(lambda x: x.str.replace(':','-') if type(x) is str else x)
+df.to_csv('csv_check.csv')
+
+df.to_json(OUTFILE)
 
 f = open(OUTFILE)
 data = json.load(f)
