@@ -11,15 +11,15 @@ d3.json("data/data_line.json", function(data) {
   var values_total = [];
 
   for(key in data["Mannen"]) {
-    values_men.push({year: data["Jaar"][key], value: data["Mannen"][key]})
+    values_men.push({year: data["Jaar"][key], value: parseFloat(data["Mannen"][key])})
   }
 
   for(key in data["Vrouwen"]) {
-    values_women.push({year: data["Jaar"][key], value: data["Vrouwen"][key]})
+    values_women.push({year: data["Jaar"][key], value: parseFloat(data["Vrouwen"][key])})
   }
 
   for(key in data["Totaal"]) {
-    values_total.push({year: data["Jaar"][key], value: data["Totaal"][key]})
+    values_total.push({year: data["Jaar"][key], value: parseFloat(data["Totaal"][key])})
   }
 
   var data = [
@@ -78,17 +78,11 @@ d3.json("data/data_line.json", function(data) {
   var color = d3.scaleOrdinal(d3.schemeCategory10);
 
   /* Add SVG */
-  // var svg = d3.select("#chart").append("svg")
-  //   .attr("width", (width+margin)+"px")
-  //   .attr("height", (height+margin)+"px")
-  //   .append('g')
-  //   .attr("transform", `translate(${margin}, ${margin})`);
-
   var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
     .append("g")
-    .attr("transform", "translate(" + 30 + "," + 40 + ")");
+    .attr("transform", "translate(" + 40 + "," + 10 + ")");
 
 
   /* Add line into SVG */
@@ -191,100 +185,22 @@ d3.json("data/data_line.json", function(data) {
 
   svg.append("g")
     .attr("class", "x axis")
-    .attr("transform", `translate(0, ${height-margin-30})`)
-    .call(xAxis);
+    .attr("transform", `translate(0, ${height-margin})`)
+    .call(xAxis)
+    .append('text')
+    .attr("y", 35)
+    .attr("x", 820)
+    .attr("fill", "#000")
+    .text("Year");
 
   svg.append("g")
     .attr("class", "y axis")
-    .attr("transform", `translate(0, -30)`)
     .call(yAxis)
-
-  // Add a label to the y axis
-  svg.append("text")
-   .attr("transform", "rotate(-90)")
-   .attr("y", 0 - 20)
-   .attr("x", 0 - 150)
-   .attr("dy", "1em")
-   .style("text-anchor", "middle")
-   .text("Smokers (%)")
-   .attr("class", "y axis label");
-
-  // svg.append("g")
-  //   .attr("class", "y axis")
-  //   .attr("transform", `translate(0, -30)`)
-  //   .call(yAxis)
-  //   .append('text')
-  //   .attr("y", 15)
-  //   .attr("transform", "rotate(-90)")
-  //   .attr("fill", "#000")
-  //   .text("Smokers (%)");
+    .append('text')
+    .attr("y", -25)
+    .attr("x", 0)
+    .attr("transform", "rotate(-90)")
+    .attr("fill", "#000")
+    .text("Smokers (%)");
 
 })
-
-//   // Create a list of the values on the x-axis
-//   var years = [];
-//   for (key in data['Jaar']) {
-//     years.push(data['Jaar'][key]);
-//   }
-//
-//   console.log(years);
-//
-//   var margin = {top: 50, right: 50, bottom: 50, left: 50}
-//     , width = window.innerWidth - margin.left - margin.right // Use the window's width
-//     , height = window.innerHeight - margin.top - margin.bottom; // Use the window's height
-//
-//   // The number of datapoints
-//   var n = 28;
-//
-//   // X scale will use the index of our data
-//   var xScale = d3.scaleLinear()
-//       .domain(1990, 2017) // input
-//       .range([0, width]); // output
-//
-//   // Y scale will use the randomly generate number
-//   var yScale = d3.scaleLinear()
-//       .domain([0, 100]) // input
-//       .range([height, 0]); // output
-//
-//   // d3's line generator
-//   var line = d3.line()
-//       .x(function(d, i) { return xScale(i); }) // set the x values for the line generator
-//       .y(function(d) { return yScale(d.y); }) // set the y values for the line generator
-//       .curve(d3.curveMonotoneX); // apply smoothing to the line
-//
-//   // An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
-//   var dataset =
-//
-//   // Add the SVG to the page and employ #2
-//   var svg = d3.select("body").append("svg")
-//       .attr("width", width + margin.left + margin.right)
-//       .attr("height", height + margin.top + margin.bottom)
-//     .append("g")
-//       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-//
-//   // Call the x axis in a group tag
-//   svg.append("g")
-//       .attr("class", "x axis")
-//       .attr("transform", "translate(0," + height + ")")
-//       .call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
-//
-//   // Call the y axis in a group tag
-//   svg.append("g")
-//       .attr("class", "y axis")
-//       .call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
-//
-//   // Append the path, bind the data, and call the line generator
-//   svg.append("path")
-//       .datum(dataset) // 10. Binds data to the line
-//       .attr("class", "line") // Assign a class for styling
-//       .attr("d", line); // 11. Calls the line generator
-//
-//   // Appends a circle for each datapoint
-//   svg.selectAll(".dot")
-//       .data(dataset)
-//     .enter().append("circle") // Uses the enter().append() method
-//       .attr("class", "dot") // Assign a class for styling
-//       .attr("cx", function(d, i) { return xScale(i) })
-//       .attr("cy", function(d) { return yScale(d.y) })
-//       .attr("r", 5);
-// })

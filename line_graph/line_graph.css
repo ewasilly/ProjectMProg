@@ -1,7 +1,19 @@
-body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+svg {
+    font-family: Sans-Serif, Arial;
+}
+.line {
+  stroke-width: 2;
+  fill: none;
+}
 
-    .line {
-      fill: none;
-      stroke: steelblue;
-      stroke-width: 1.5px;
+.axis path {
+  stroke: black;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.title-text {
+  font-size: 12px;
 }
