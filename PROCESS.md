@@ -19,3 +19,9 @@ The legend of the pie chart is visible! I also started on my line graph. The axe
 
 #### Tuesday, 15 January
 The line graph looks good and is showing all the data that it is supposed to show. Nothing is linked yes, I will start working on this once all individual visualizations are finished. I made a start on the bar chart, but nothing is showing yet in the browser. I will work on this more this evening. I also need to start thinking about how I will use functions. Got some tips form teammates, but still need to work this out for myself and perhaps ask some help from a tutor.
+
+#### Wednesday, 16 January
+Tried to work on functions, this didn't really work out. Will seek help for this later. Made some progress on the data for the bar chart.
+
+#### Thursday, 17 January
+At the end of the I finally have axes and some bars! Very happy with this result. Hopefully, by the end of tomorrow I will be able to show all three categories in the bar chart (now only 1 category is visible).

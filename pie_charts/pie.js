@@ -2,7 +2,7 @@
 // Student number: 12149071
 // Description: This file contains all the javascript code for the scatterplot
 
-d3.json("data/data_pie_bar.json", function(data) {
+d3.json("data/data_pie_bar.json").then(function(data) {
   console.log(data);
   var data = data[0];
   var smokers = parseInt(data['||Rokers'][0]);

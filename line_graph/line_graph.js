@@ -3,7 +3,7 @@
 // Description: This file contains all the javascript code for the scatterplot
 
 
-d3.json("data/data_line.json", function(data) {
+d3.json("data/data_line.json").then(function(data) {
   console.log(data);
 
   var values_men = [];
