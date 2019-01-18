@@ -1,9 +1,7 @@
 // Name: Ewa Sillem
 // Student number: 12149071
 // Description: This file contains all the javascript code for the scatterplot
-
-d3.json("data/data_pie_bar.json").then(function(data) {
-  console.log(data);
+function pie (data) {
   var data = data[0];
   var smokers = parseInt(data['||Rokers'][0]);
   var nonsmokers = 100 - smokers;
@@ -62,8 +60,6 @@ d3.json("data/data_pie_bar.json").then(function(data) {
     .append('g') // replace placeholders with g elements
     .attr('class', 'legend') // each g is given a legend class
     .attr('transform', function(d, i) {
-      console.log(d);
-      console.log(i);
       var height = legendRectSize + legendSpacing; // height of element is the height of the colored square plus the spacing
       var offset =  height * color.domain().length / 2; // vertical offset of the entire legend = height of a single element & half the total number of elements
       var horz = 18 *legendRectSize - 750; // the legend is shifted to the left to make room for the text
@@ -109,8 +105,6 @@ d3.json("data/data_pie_bar.json").then(function(data) {
             });
         });
 
-      console.log(legend)
-
       // adding text to legend
       legend.append('text')
         .attr('x', legendRectSize + legendSpacing)
@@ -123,4 +117,7 @@ d3.json("data/data_pie_bar.json").then(function(data) {
             return "Non-smokers"
           }
         }); // return label
-});
+        
+  console.log("TEST");
+
+}

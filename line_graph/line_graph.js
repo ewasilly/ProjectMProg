@@ -1,9 +1,7 @@
 // Name: Ewa Sillem
 // Student number: 12149071
 // Description: This file contains all the javascript code for the scatterplot
-
-
-d3.json("data/data_line.json").then(function(data) {
+function line (data) {
   console.log(data);
 
   var values_men = [];
@@ -203,4 +201,6 @@ d3.json("data/data_line.json").then(function(data) {
     .attr("fill", "#000")
     .text("Smokers (%)");
 
-})
+  console.log("TEST");
+
+}

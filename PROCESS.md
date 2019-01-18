@@ -25,3 +25,6 @@ Tried to work on functions, this didn't really work out. Will seek help for this
 
 #### Thursday, 17 January
 At the end of the I finally have axes and some bars! Very happy with this result. Hopefully, by the end of tomorrow I will be able to show all three categories in the bar chart (now only 1 category is visible).
+
+#### Friday, 18 January
+I'm still having some problems with the bar chart. I need to figure out how to make a variable (el) global. I did make some steps in the right direction and I'm hoping that the bar chart will be working well by the end of Monday. I will spend some hours on the bar chart this weekend and try to get as far as possible and be ready on Monday with some concrete questions.

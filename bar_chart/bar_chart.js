@@ -4,6 +4,7 @@
 
 //
 d3.json("data/data_pie_bar.json").then(function(data) {
+
   console.log(data);
   console.log(data[0]['||Stoppoging in afgelopen 12 maanden']);
 
@@ -44,19 +45,19 @@ d3.json("data/data_pie_bar.json").then(function(data) {
     console.log(value);
 
   	if(value === 'cigarettes per day'){
-  		update(data_cigs);
+  		update(data_cigs, cigsperday);
   	}
     else if(value === 'heavy smokers'){
-  		update(data_heavy);
+  		update(data_heavy, heavy);
   	}
     else if(value === 'attempt to quit')
     {
-  		update(data_quit);
+  		update(data_quit, quit);
   	}
   }
 
 
-  function update(data){
+  function update(data, value) {
     console.log(data);
   	//set domain for the x axis
   	xChart.domain(el.map(function(d) {
@@ -75,11 +76,12 @@ d3.json("data/data_pie_bar.json").then(function(data) {
   					.exit()
   					.data(data)
 
+
   	//now actually give each rectangle the corresponding data
   	bars.enter()
   		.append("rect")
   		.attr("class", "bar")
-  		.attr("x", function(d, i){
+  		.attr("x", function(d, i) {
         return i * barWidth + 1;
       })
   		.attr("y", function(d){
@@ -90,13 +92,17 @@ d3.json("data/data_pie_bar.json").then(function(data) {
       })
   		.attr("width", barWidth - 1)
   		.attr("fill", function(d) {
-  			if(d.viewer_gender === "FEMALE") {
-  				return "rgb(251,180,174)";
+        console.log(data)
+  			if(value === "cigsperday") {
+  				return "#964B00";
   			}
-        else
+        else if (value === "heavy")
         {
-  				return "rgb(179,205,227)";
+  				return "#FFCA23";
   			}
+        else {
+          return "#7FB70C"
+        }
   		});
 
   	//left axis
