@@ -4,9 +4,12 @@ window.onload = function() {
   var requests = [d3.json(input[0]), d3.json(input[1])];
 
   Promise.all(requests).then(function(data) {
-    bar(data[0]);
     pie(data[0]);
+    pie_2(data[0]);
+    pie_3(data[0]);
     line(data[1]);
+    bar(data[0]);
+
 
   }).catch(function(e){
     throw(e);

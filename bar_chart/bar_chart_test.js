@@ -35,26 +35,12 @@ function bar(data){
             data2['Kenmerken personen'][17], data2['Kenmerken personen'][18],
             data2['Kenmerken personen'][19]];
 
-  // //set up svg
-  // var margin = {top: 20, right: 20, bottom: 95, left: 50};
-  // var width = 800;
-  // var height = 500;
-
   /* Add svg */
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("#bar").append("svg")
     .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("height", 800)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-  // var xChart = d3.scaleBand()
-  //         .range([0, width]);
-  //
-  // var yChart = d3.scaleLinear()
-  //         .range([height, 0]);
-  //
-  // var xAxis = d3.axisBottom(xChart);
-  // var yAxis = d3.axisLeft(yChart);
 
   //set up axes
   //left axis
@@ -81,18 +67,37 @@ function bar(data){
     .text("%");
 
   svg.append("text")
-    .attr("transform", "translate(" + (width/2) + "," + (height + margin.bottom - 40) + ")")
+    .attr("transform", "translate(" + (width/2 - 60) + "," + (height + 200) + ")")
     .text("Education level categories");
 
-  //use bothData to begin with
-  update(data, data2, xChart, yChart, el, width, height, svg, data, yAxis, xAxis);
+  console.log(data);
+  value = 0;
 
-  console.log("TEST");
+  var cigperday = d3.select("#cigperday");
+  var heavy = d3.select("#heavy");
+  var quit = d3.select("#quit");
+
+  cigperday.on("click", function() {
+    update('cigarettes per day', data, svg);
+  })
+
+  heavy.on("click", function() {
+    update('heavy smokers', data, svg);
+  })
+
+  quit.on("click", function() {
+    update('quit', data, svg);
+  })
+
+  update(value, data, svg);
+
+  return data;
 }
 
-//BIJNA TERUG!!!!
 
-function update(value, data2, xChart, yChart, el, width, height, svg, data, yAxis, xAxis) {
+function update(value, data, svg) {
+  var data2 = data[0];
+
   if(value === 'cigarettes per day'){
     var category = "|||Sigaretten per dag per roker "
   }
@@ -103,7 +108,6 @@ function update(value, data2, xChart, yChart, el, width, height, svg, data, yAxi
     var category = '||Stoppoging in afgelopen 12 maanden'
   }
 
-  console.log(data2);
   //list of values for amount of cigarettes smoked per day
   var data_bars = [];
   for(i = 15; i < 20; i++) {
@@ -112,6 +116,11 @@ function update(value, data2, xChart, yChart, el, width, height, svg, data, yAxi
     }
     data_bars.push(data2[category][i]);
   }
+
+  //set up data
+  var el = [data2['Kenmerken personen'][15], data2['Kenmerken personen'][16],
+            data2['Kenmerken personen'][17], data2['Kenmerken personen'][18],
+            data2['Kenmerken personen'][19]];
 
   //set domain for the x axis
   xChart.domain(el.map(function(d) {
@@ -152,7 +161,6 @@ function update(value, data2, xChart, yChart, el, width, height, svg, data, yAxi
     })
     .attr("width", barWidth - 1)
     .attr("fill", function(d) {
-      console.log(data)
       if(value === "cigsperday") {
         return "#964B00";
       }

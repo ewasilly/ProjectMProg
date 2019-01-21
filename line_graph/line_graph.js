@@ -76,7 +76,7 @@ function line (data) {
   var color = d3.scaleOrdinal(d3.schemeCategory10);
 
   /* Add SVG */
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("#line").append("svg")
     .attr("width", width)
     .attr("height", height)
     .append("g")
