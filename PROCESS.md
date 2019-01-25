@@ -28,3 +28,18 @@ At the end of the I finally have axes and some bars! Very happy with this result
 
 #### Friday, 18 January
 I'm still having some problems with the bar chart. I need to figure out how to make a variable (el) global. I did make some steps in the right direction and I'm hoping that the bar chart will be working well by the end of Monday. I will spend some hours on the bar chart this weekend and try to get as far as possible and be ready on Monday with some concrete questions.
+
+#### Monday, 21 January
+The bar chart is working! I also made 2 of the 3 linked views. When the big pie chart is clicked on, two new pie charts show on the screen. The third linked view I hope to have finished by the end of the week.
+
+#### Tuesday, 22 January
+Today I got some 'bad' news. I forgot about 'grouping' my bar chart. The example that I used for my code was a grouped bar chart, but for some reason the grouping isn't happening in my chart. My project isn't complex enough if the bar chart isn't grouped. I'll have to make the bar chart all over again, because it's going to be too complicated to change the bar chart into a grouped bar chart.
+
+#### Wednesday, 23 January
+Today I wasn't feeling well and decided to stay home. I tried to work on my bar chart in the evening but didn't really manage.
+
+#### Thursday, 24 January
+Hackathon day. I wasn't able to ask any questions. I really need some help.
+
+#### Friday, 25 January
+The bar chart still isn't finished by the end of today. I'm getting worried. I also still need to complete the third linked view... Hopefully I'll figure out the bar chart by myself during the weekend.

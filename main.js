@@ -5,10 +5,10 @@ window.onload = function() {
 
   Promise.all(requests).then(function(data) {
     pie(data[0]);
-    pie_2(data[0]);
-    pie_3(data[0]);
+    //pie_2(data[0]);
+    //pie_3(data[0]);
     line(data[1]);
-    bar(data[0]);
+    bartest();
 
 
   }).catch(function(e){

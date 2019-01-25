@@ -1,9 +1,9 @@
 // Name: Ewa Sillem
 // Student number: 12149071
 // Description: This file contains all the javascript code for the scatterplot
-function pie (data) {
-  var data = data[0];
-  var smokers = parseInt(data['||Rokers'][0]);
+function pie(data, data2) {
+  var db = data[0];
+  var smokers = parseInt(db['||Rokers'][0]);
   var nonsmokers = 100 - smokers;
 
   var data = [smokers, 100-smokers];
@@ -47,6 +47,12 @@ function pie (data) {
       .attr("dy", ".35em")
       .text(function(d) { return d.data; });
 
+  var link = d3.select("#pie1");
+    link.on("click", function() {
+      pie_2(db);
+      pie_3(db);
+      //draw_lines(data2);
+    })
 
 
   // legend dimensions
@@ -121,10 +127,10 @@ function pie (data) {
 }
 
 
-function pie_2(data) {
-  var data = data[0];
-    console.log(data);
 
+function pie_2(data) {
+  /* This pie chart shows how different education levels
+  are distributed across smokers. */
   var data_el = [];
   for (i = 14; i < 20; i++) {
     data_el.push(parseInt(data['||Rokers'][i]));
@@ -168,8 +174,6 @@ function pie_2(data) {
       .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
       .attr("dy", ".35em")
       .text(function(d) { return d.data; });
-
-
 
   // legend dimensions
   var legendRectSize = 15; // defines the size of the colored squares in legend
@@ -253,9 +257,13 @@ function pie_2(data) {
         }); // return label
 }
 
+
+
 function pie_3(data) {
-  var data = data[0];
+  /* This pie chart shows the distribution of age groups
+  across smokers */
   var data_age = [];
+    console.log(data);
   for (i = 5; i < 14; i++) {
     data_age.push(parseInt(data['||Rokers'][i]));
   }
@@ -265,7 +273,7 @@ function pie_3(data) {
     radius = Math.min(width, height) / 3;
 
   var color = d3.scaleOrdinal()
-    .range(["#0084FF", "#44BEC7", "#FFC300", "FA3C4C", "#D696BB", "008000"]);
+    .range(["#0084FF", "#44BEC7", "#FFC300", "FA3C4C", "#D696BB", "#008000", "FFA500", "#D70D2F", "#D3B8FF"]);
 
   var arc = d3.arc()
     .outerRadius(radius - 10)
@@ -281,9 +289,9 @@ function pie_3(data) {
 
   var svg = d3.select("#pie3").append("svg")
     .attr("width", width)
-    .attr("height", height)
+    .attr("height", 400)
   .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + (height - 100) + ")");
+    .attr("transform", "translate(" + width / 2 + "," + (height - 50) + ")");
 
   var g = svg.selectAll(".arc")
       .data(pie(data_age))
@@ -363,22 +371,28 @@ function pie_3(data) {
         .attr('y', legendRectSize - legendSpacing)
         .text(function(d, i){
           if(i == 0) {
-            return "primary school"
+            return "12-16"
           }
           else if(i == 1) {
-            return "vmbo, mbo1, avo onderbouw"
+            return "16-20"
           }
           else if(i == 2) {
-            return "havo, vwo, mbo"
+            return "20-30"
           }
           else if(i == 3) {
-            return "hbo, wo bachelor"
+            return "30-40"
           }
           else if(i == 4) {
-            return "wo, master, doctor"
+            return "40-50"
+          }
+          else if(i == 5) {
+            return "50-55"
+          }
+          else if(i == 6) {
+            return "65-75"
           }
           else {
-            return "unknown"
+            return "75+"
           }
         }); // return label
 }
