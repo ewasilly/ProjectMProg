@@ -55,7 +55,6 @@ function pie(data, data2, data3) {
       if (counter < 1) {
         pie_2(db);
         pie_3(db);
-        console.log(data3);
         line(data2, data3);
         ++counter;
       }

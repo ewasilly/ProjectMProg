@@ -4,8 +4,6 @@
 function test(x){
   d3.json("data/data_line.json").then(function(data){
     console.log(data);
-    console.log(x);
-    console.log(data[x]);
 
     var width = 900;
     var height = 400;
@@ -17,10 +15,10 @@ function test(x){
     var yAxis = d3.axisLeft(yScale).ticks(5);
 
     // format data
-    if (x === "Mannen") {
+    if (x == "Mannen") {
       var gender = "Men"
     }
-    if (x === "Vrouwen") {
+    if (x == "Vrouwen") {
       var gender = "Women";
     }
     else {
@@ -30,32 +28,36 @@ function test(x){
     var parseDate = d3.timeParse("%Y");
     var value_list = [];
     for(i = 0; i < 28; ++i){
-      value_list.push({year: parseDate(data['Jaar'][i]), value: parseInt(data[x][i])});
+      value_list.push({year: parseDate(data['Jaar'][i]), value: parseFloat(data[x][i])});
     }
 
     var data_update = [{name: gender, values:value_list}]
 
     console.log(data_update);
 
-    console.log(data_update);
-
-      var color = d3.scaleOrdinal(d3.schemeCategory10);
-
     /* Scale */
     var xScale = d3.scaleTime()
       .domain(d3.extent(data_update[0].values, d => d.year))
       .range([0, width-margin]);
 
+    console.log(data['Mannen']);
+    console.log(data['Vrouwen']);
+    console.log(data_update[0]);
     var yScale = d3.scaleLinear()
-      .domain([0, d3.max(data_update[0].values, d => d.value)])
+      .domain([0, 44])
+      //.domain([0, d3.max(data_update[0].values, d => d.value)])
       .range([height-margin, 0]);
+
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 
     update(data_update);
 
 
     function update(data) {
+      console.log(data);
       svg = d3.select("#lineG")
+          .attr("transform", "translate(" + 40 + "," + 10 + ")");
 
       /* Add line into svg */
       var line = d3.line()
@@ -264,6 +266,7 @@ function line(data) {
     });
   });
 
+  console.log(data);
   console.log(data[0].values);
 
   /* Scale */
@@ -318,8 +321,6 @@ function line(data) {
 
   let lines = svg.append('g')
     .attr('class', 'lines');
-
-  console.log(data_total);
 
   lines.selectAll('.line-group')
     .data(data_total).enter()

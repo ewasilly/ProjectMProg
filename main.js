@@ -5,7 +5,6 @@ window.onload = function() {
 
   Promise.all(requests).then(function(data) {
     console.log([data[1]])
-    console.log(data[1]['Totaal'])
     pie(data[0], data[1]);
     //pie_2(data[0]);
     //pie_3(data[0]);
