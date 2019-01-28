@@ -4,10 +4,12 @@ window.onload = function() {
   var requests = [d3.json(input[0]), d3.json(input[1])];
 
   Promise.all(requests).then(function(data) {
-    pie(data[0]);
+    console.log([data[1]])
+    console.log(data[1]['Totaal'])
+    pie(data[0], data[1]);
     //pie_2(data[0]);
     //pie_3(data[0]);
-    line(data[1]);
+    //line(data[1]);
     bartest();
 
 

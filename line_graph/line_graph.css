@@ -1,5 +1,5 @@
 svg {
-    font-family: Sans-Serif, Arial;
+    font-family: courier;
 }
 .line {
   stroke-width: 2;
@@ -7,7 +7,7 @@ svg {
 }
 
 .axis path {
-  stroke: black;
+  stroke: #000000;
 }
 
 .text {
@@ -15,5 +15,6 @@ svg {
 }
 
 .title-text {
-  font-size: 12px;
+  font-size: 20px;
+  font-weight: bold;
 }

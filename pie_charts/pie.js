@@ -1,7 +1,7 @@
 // Name: Ewa Sillem
 // Student number: 12149071
 // Description: This file contains all the javascript code for the scatterplot
-function pie(data, data2) {
+function pie(data, data2, data3) {
   var db = data[0];
   var smokers = parseInt(db['||Rokers'][0]);
   var nonsmokers = 100 - smokers;
@@ -45,13 +45,20 @@ function pie(data, data2) {
   g.append("text")
       .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
       .attr("dy", ".35em")
-      .text(function(d) { return d.data; });
+      .text(function(d) {
+        return d.data;
+      });
 
-  var link = d3.select("#pie1");
+  var counter = 0;
+  var link = d3.select(".arc");
     link.on("click", function() {
-      pie_2(db);
-      pie_3(db);
-      //draw_lines(data2);
+      if (counter < 1) {
+        pie_2(db);
+        pie_3(db);
+        console.log(data3);
+        line(data2, data3);
+        ++counter;
+      }
     })
 
 
@@ -141,7 +148,7 @@ function pie_2(data) {
     radius = Math.min(width, height) / 3;
 
   var color = d3.scaleOrdinal()
-    .range(["#0084FF", "#44BEC7", "#FFC300", "FA3C4C", "#D696BB", "008000"]);
+    .range(["#EA7070", "#FDC4B6", "#E59572", "#2694AB", "#4DBEDF", "#749051"]);
 
   var arc = d3.arc()
     .outerRadius(radius - 10)
@@ -157,7 +164,7 @@ function pie_2(data) {
 
   var svg = d3.select("#pie2").append("svg")
     .attr("width", width)
-    .attr("height", height)
+    .attr("height", 500)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + (height - 100) + ")");
 
@@ -263,17 +270,16 @@ function pie_3(data) {
   /* This pie chart shows the distribution of age groups
   across smokers */
   var data_age = [];
-    console.log(data);
   for (i = 5; i < 14; i++) {
     data_age.push(parseInt(data['||Rokers'][i]));
   }
 
   var width = 400,
     height = 300,
-    radius = Math.min(width, height) / 3;
+    radius = Math.min(width, height) / 2.5;
 
   var color = d3.scaleOrdinal()
-    .range(["#0084FF", "#44BEC7", "#FFC300", "FA3C4C", "#D696BB", "#008000", "FFA500", "#D70D2F", "#D3B8FF"]);
+    .range(["#611716", "#FDC4B6", "#E59572", "#2694AB","#166061", "#4DBEDF", "#749051", "#D2C58C", "#EA7070"]);
 
   var arc = d3.arc()
     .outerRadius(radius - 10)
@@ -303,7 +309,11 @@ function pie_3(data) {
       .style("fill", function(d) { return color(d.data); });
 
   g.append("text")
-      .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+      .attr("transform", function(d) {
+        var coords = labelArc.centroid(d);
+        coords[0] = coords[0]-5;
+        coords[1] = coords[1]-6;
+        return "translate(" + coords + ")"; })
       .attr("dy", ".35em")
       .text(function(d) { return d.data; });
 

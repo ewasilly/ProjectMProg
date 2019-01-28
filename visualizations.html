@@ -19,6 +19,9 @@
   <!-- D3 V5 -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
+  <!-- D3 V4 -->
+  <script src="D3/d3v4.js"></script>
+
   <!-- flavicon -->
   <link rel="icon" href="doc/favicon.ico" type="image/x-icon"/></link>
 
@@ -29,7 +32,7 @@
   <!-- Pie Chart -->
   <script src="data/data_pie_bar.json"></script>
   <script src="pie_charts/pie.js"></script>
-  <line rel="stylesheet" href="pie_charts/pie.css"
+  <link rel="stylesheet" href="pie_charts/pie.css"/>
 
   <!-- Line graph -->
   <script src="line_graph/line_graph.js"></script>
@@ -57,6 +60,7 @@
       <a class="nav-link" href="contact.html">Contact</a>
     </li>
   </ul>
+</div>
 </nav>
 <br>
 
@@ -74,28 +78,28 @@
 <!-- Checkbox in bar chart -->
 <div class="container-fluid" id="visualize">
   <div class="row">
-  <div class="col-s" id="pie1" style="background-color:#C0D8E3"><h2>Smoking behavior of smokers</h2></div>
-  <div class="col-sm" id="pie2" style="background-color:#A78D8A"></div>
-  <div class="col-sm" id="pie3" style="background-color:#E18A7A"></div>
-  <div class="w-100"></div>
-  <div class="col-sm" id="line" style="background-color:#FFE4E1"></div>
-  <div class="w-100"></div>
   <div class="col-sm" id="bar" style="background-color:#ECCFCF"></div>
-    <div class="radio">
-      <label class="radio-inline">
-        <input type="radio" name="smokers" value="cigarettes per day" id="cigperday"> Cigarettes per day
-  		</label>
-  		<label class="radio-inline">
-  			<input type="radio" name="smokers" value="heavy smokers" id="heavy"> Heavy smokers of smokers
-  		</label>
-  		<label class="radio-inline">
-  			<input type="radio" name="smokers" value="attempt to quit" id="quit" checked > Attempted to quit in past 12 months
-  		</label>
-  	</div>
+  <div class="w-100"></div>
+  <div class="col-s" id="pie1" style="background-color:#C0D8E3">
+    <h4>Smoking numbers in the Netherlands</h4></div>
+  <div class="col-sm" id="pie2" style="background-color:#A78D8A">
+    <h4>Education levels of smokers</h4></div>
+  <div class="col-sm" id="pie3" style="background-color:#E18A7A">
+    <h4>Age distribution of smokers</h4></div>
+  <div class="w-100"></div>
+  <div class="col-sm" id="line" style="background-color:#FFE4E1">
+  <h4>The trend of smoking behavior (1990-2017)</h4></div>
+  <div class="col-sm" id="dropdown">
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="test('Totaal')">Total</a>
+        <a href="#" onclick="test('Vrouwen')">Women</a>
+        <a href="#" onclick="test('Mannen')">Men</a>
+      </div>
+    </div></div>
+    </div>
   </div>
-	<svg class="chart">
-	</svg>
-	</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
