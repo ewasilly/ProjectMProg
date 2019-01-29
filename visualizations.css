@@ -1,12 +1,14 @@
 h3 {
   font-family: courier;
   font-weight: bold;
+  text-align: center;
 }
 
 p {
   font-family: courier;
   font-size: 100%;
   font-weight: bold;
+  text-align: center;
 
 }
 h2 {
@@ -19,10 +21,22 @@ h4 {
   font-weight: bold;
 }
 
+.col-sm {
+  text-align: center;
+}
+
+.dropdown {
+  text-align: right;
+}
+
+.row {
+  text-align: center;
+}
+
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #EEAC6A;
+  color: black;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -59,4 +73,4 @@ h4 {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #F29333;}

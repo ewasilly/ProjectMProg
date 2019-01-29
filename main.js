@@ -9,7 +9,7 @@ window.onload = function() {
     //pie_2(data[0]);
     //pie_3(data[0]);
     //line(data[1]);
-    bartest();
+    bar();
 
 
   }).catch(function(e){

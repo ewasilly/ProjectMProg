@@ -77,29 +77,28 @@
 
 <!-- Checkbox in bar chart -->
 <div class="container-fluid" id="visualize">
-  <div class="row">
   <div class="col-sm" id="bar" style="background-color:#ECCFCF"></div>
   <div class="w-100"></div>
-  <div class="col-s" id="pie1" style="background-color:#C0D8E3">
+  <div class="row">
+  <div class="col-sm" id="pie1" style="background-color:#C0D8E3">
     <h4>Smoking numbers in the Netherlands</h4></div>
   <div class="col-sm" id="pie2" style="background-color:#A78D8A">
     <h4>Education levels of smokers</h4></div>
   <div class="col-sm" id="pie3" style="background-color:#E18A7A">
-    <h4>Age distribution of smokers</h4></div>
+    <h4>Age distribution of smokers</h4></div></div>
   <div class="w-100"></div>
-  <div class="col-sm" id="line" style="background-color:#FFE4E1">
+  <div class="row">
+  <div class="col-6" id="line" style="background-color:#FFE4E1">
   <h4>The trend of smoking behavior (1990-2017)</h4></div>
-  <div class="col-sm" id="dropdown">
+  <div class="col" id="dropdown">
     <div class="dropdown">
-      <button class="dropbtn">Dropdown</button>
+      <button class="dropbtn">Gender</button>
       <div class="dropdown-content">
-        <a href="#" onclick="test('Totaal')">Total</a>
-        <a href="#" onclick="test('Vrouwen')">Women</a>
-        <a href="#" onclick="test('Mannen')">Men</a>
+        <a href="#" onclick="add_lines('Totaal')">Total</a>
+        <a href="#" onclick="add_lines('Vrouwen')">Women</a>
+        <a href="#" onclick="add_lines('Mannen')">Men</a></div>
       </div>
-    </div></div>
     </div>
-  </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

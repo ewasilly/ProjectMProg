@@ -2,7 +2,7 @@
 // Student number: 12149071
 // Description: This file contains all the javascript code for the scatterplot
 
-function bartest() {
+function bar() {
   var width = 800;
   var height = 400;
   var margin = {top: 20, right: 20, bottom: 30, left: 40}
@@ -207,7 +207,7 @@ function bartest() {
 
   });
 }
-// function bartest() {
+// function bar() {
 //   var width = 960;
 //   var height = 500;
 //   var margin = {top: 20, right: 20, bottom: 30, left: 40}
