@@ -10,8 +10,15 @@ The README.md should also acknowledge sources of external code, images and other
 
 Also note that these materials have their own respective licenses. You should at the very least note this fact (again, in the README.md). Make sure you also check the licenses to see if you should make a special statement about the source of the materials.
 
+## Ewa Sillem
 ### Intro
 
 This title of this website is 'Smoking and Education'. It's purpose is to make the relationship between smoking and education level more clear. This information can be used by organizations that organize smoking prevention programs. It can also create more awareness among the Dutch population.
 
+The first screenshot shows the bar chart. It's purpose is to visualize a variety of characteristics that smokers have and the extent to which those characteristics apply to smokers at different educational levels.
+
 ![alt text](doc/prtscr1.png)
+
+The second screenshot is of the pie charts. The biggest pie chart represents smokers and non-smokers in the Netherlands. The middle pie chart represents the distribution of education levels among smokers. The third pie chart represents the distribution of age among smokers.
+
+This line graph shows the trend of smoking behavior over the years 1990-2017. This information can be found for all smokers in the Netherlands, female smokers and male smokers.  
