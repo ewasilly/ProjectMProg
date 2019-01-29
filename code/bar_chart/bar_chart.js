@@ -77,6 +77,7 @@ function bar() {
         .attr("class", "y axis")
         .call(d3v4.axisLeft(y).ticks(null, "s"))
       .append("text")
+        .attr("font-size", 12)
         .attr("x", 2)
         .attr("y", y(y.ticks().pop()) + 0.5)
         .attr("dy", "0.32em")
@@ -87,7 +88,7 @@ function bar() {
 
     var legend = g.append("g")
         .attr("font-family", "sans-serif")
-        .attr("font-size", 10)
+        .attr("font-size", 12)
         .attr("text-anchor", "end")
       .selectAll("g")
       .data(keys.slice().reverse())
@@ -116,10 +117,7 @@ function bar() {
     ////
 
     function update(d) {
-
-      //
       // Update the array to filter the chart by:
-      //
 
       // add the clicked key if not included:
       if (filtered.indexOf(d) == -1) {
@@ -145,29 +143,26 @@ function bar() {
       y.domain([0, d3v4.max(data, function(d) { return d3v4.max(keys, function(key) { if (filtered.indexOf(key) == -1) return d[key]; }); })]).nice();
 
       // update the y axis:
-              svg.select(".y")
-              .transition()
-              .call(d3v4.axisLeft(y).ticks(null, "s"))
-              .duration(500);
+      svg.select(".y")
+        .transition()
+        .call(d3v4.axisLeft(y).ticks(null, "s"))
+        .duration(500);
 
-
-      //
       // Filter out the bands that need to be hidden:
-      //
       var bars = svg.selectAll(".bar").selectAll("rect")
         .data(function(d) { return keys.map(function(key) { return {key: key, value: d[key]}; }); })
 
-     bars.filter(function(d) {
-           return filtered.indexOf(d.key) > -1;
-        })
-        .transition()
-        .attr("x", function(d) {
-          return (+d3v4.select(this).attr("x")) + (+d3v4.select(this).attr("width"))/2;
-        })
-        .attr("height",0)
-        .attr("width",0)
-        .attr("y", function(d) { return height; })
-        .duration(500);
+      bars.filter(function(d) {
+        return filtered.indexOf(d.key) > -1;
+      })
+      .transition()
+      .attr("x", function(d) {
+        return (+d3v4.select(this).attr("x")) + (+d3v4.select(this).attr("width"))/2;
+      })
+      .attr("height",0)
+      .attr("width",0)
+      .attr("y", function(d) { return height; })
+      .duration(500);
 
       //
       // Adjust the remaining bars:

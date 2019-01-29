@@ -21,13 +21,23 @@ h4 {
   font-weight: bold;
 }
 
+h6 {
+  font-family: courier;
+  font-weight: bold;
+}
+
 .col-sm {
   text-align: center;
 }
 
-.dropdown {
+.col-10 {
   text-align: right;
 }
+
+.col-2 {
+  text-align: left;
+}
+
 
 .row {
   text-align: center;
