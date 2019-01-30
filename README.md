@@ -1,7 +1,10 @@
 ## Ewa Sillem
  https://ewasilly.github.io/ProjectMProg/
 
+ ### Copyright statement
+
  © 2019 - 2019 Ewa Sillem - All Rights Reserved.
+ 
  Ewa Sillem does not own the rights to the used data.
 
 ### Intro
