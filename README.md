@@ -16,10 +16,19 @@ Also note that these materials have their own respective licenses. You should at
 
 This title of this website is 'Smoking and Education'. It's purpose is to make the relationship between smoking and education level more clear. This information can be used by organizations that organize smoking prevention programs. It can also create more awareness among the Dutch population.
 
-The first screenshot shows the bar chart. It's purpose is to visualize a variety of characteristics that smokers have and the extent to which those characteristics apply to smokers at different educational levels.
+The home page:
 
-![alt text](doc/prtscr1.png)
+![alt text](home.PNG)
 
-The second screenshot is of the pie charts. The biggest pie chart represents smokers and non-smokers in the Netherlands. The middle pie chart represents the distribution of education levels among smokers. The third pie chart represents the distribution of age among smokers.
+From the home screen, the user can navigate to the tab "Visualizations". On that page visualizations are shown with a bar chart at the top of the page, under it the three pie chart, and at the bottom the line graph.
+
+The following screenshot shows the bar chart. It's purpose is to visualize a variety of characteristics that smokers have and the extent to which those characteristics apply to smokers at different education levels.
+
+![alt text](bar.PNG)
+
+Following the bar chart are the pie charts. At first, only one pie chart is visible. This pie chart represents the distribution of smokers and non-smokers among the Dutch population. It is possible to click on the "Smoker" part of the pie chart. Once clicked, the other two pie charts and the line graph appear.
+The middle pie chart represents the distribution of education levels, and the third pie chart represents the age distribution among smokers.
+
+1[alt text](pie-charts.PNG)
 
 This line graph shows the trend of smoking behavior over the years 1990-2017. This information can be found for all smokers in the Netherlands, female smokers and male smokers.  
