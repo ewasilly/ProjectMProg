@@ -1,5 +1,4 @@
 
-a copyright notice which states who actually owns the rights to the materials in the repository (probably only you)
 
 The README.md should also acknowledge sources of external code, images and other materials that are in the repository but not created by yourself. Make sure that it is clear which directories are copyrighted by different creators.
 
@@ -7,7 +6,9 @@ Also note that these materials have their own respective licenses. You should at
 
 ## Ewa Sillem
  https://ewasilly.github.io/ProjectMProg/
+
  © 2019 - 2019 Ewa Sillem - All Rights Reserved.
+ Ewa Sillem does not own the rights to the used data.
 
 ### Intro
 The title of this website is 'Smoking and Education'. It's purpose is to make the relationship between smoking and education level more clear. This information can be used by organizations that organize smoking prevention programs. It can also create more awareness among the Dutch population.
@@ -47,11 +48,33 @@ This page is quite straightforward in its purpose. It gives some contact informa
 
 ### External sources
 
-#### Facts page
+All the licenses of the sources have been checked and are allowed to be used in this project.
+
+##### Facts page
 I used information from the website of the organization Centers for Disease Control and Prevention:  https://www.cdc.gov/tobacco/data_statistics/fact_sheets/fast_facts/index.htm
 
-#### Visualizations
-Source of bar chart: https://bl.ocks.org/Andrew-Reid/64a6c1892d1893009d2b99b8abee75a7
+##### Visualizations
+Bar chart by Andrew-Reid: https://bl.ocks.org/Andrew-Reid/64a6c1892d1893009d2b99b8abee75a7
 
-Source of line graph:
+Line graph by Zakaria Chowdhury:
 https://codepen.io/zakariachowdhury/pen/JEmjwq
+
+##### Images
+1. favicon.ico: https://www.favicon.cc/?action=icon&file_id=922973
+2. quit_smoking.jpg: https://jamaicahospital.org/newsletter/?p=4980
+3. smoking-1.jpg: https://canadianhealthncaremall.com/facts-and-myths-about-smoking.html
+
+##### Code
+1. Bootstrap: https://www.w3schools.com/bootstrap4/
+2. d3 v4: https://d3js.org/d3.v4.min.js
+3. d3 v5: https://d3js.org/d3.v5.min.js
+4. d3-legend: https://github.com/susielu/d3-legend
+5. d3-rect: https://github.com/vijithassar/d3-rect
+6. d3-axis: https://github.com/d3/d3-axis
+7. d3-time-format: https://github.com/d3/d3-time-format
+8. d3-tooltip: https://github.com/bumbeishvili/d3-tooltip
+9. d3-scale-chromatic: https://github.com/d3/d3-scale-chromatic
+
+##### Dataset
+1. https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83021NED/table?dl=F05B
+2. https://www.volksgezondheidenzorg.info/onderwerp/roken/cijfers-context/trends#node-trend-roken-volwassenen
