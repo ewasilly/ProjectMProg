@@ -15,7 +15,7 @@ Finished the Design Document:
 Slow day with not as much progress as I would have liked. Mentor meeting in the afternoon. The rest of my group is a lot further than I am. I need to work a bit faster.
 
 #### Monday, 14 January
-The legend of the pie chart is visible! I also started on my line graph. The axes are in place, but the datapoints are all on the same y-level. Will work on fixing this first thing in the morning tomorrow. Hopefully the line graph will be complete by the end of tomorrow.
+The legend of the pie chart is visible! I also started on my line graph. The axes are in place, but the data points are all on the same y-level. Will work on fixing this first thing in the morning tomorrow. Hopefully the line graph will be complete by the end of tomorrow.
 
 #### Tuesday, 15 January
 The line graph looks good and is showing all the data that it is supposed to show. Nothing is linked yes, I will start working on this once all individual visualizations are finished. I made a start on the bar chart, but nothing is showing yet in the browser. I will work on this more this evening. I also need to start thinking about how I will use functions. Got some tips form teammates, but still need to work this out for myself and perhaps ask some help from a tutor.
@@ -43,3 +43,15 @@ Hackathon day. I wasn't able to ask any questions. I really need some help.
 
 #### Friday, 25 January
 The bar chart still isn't finished by the end of today. I'm getting worried. I also still need to complete the third linked view... Hopefully I'll figure out the bar chart by myself during the weekend.
+
+#### Weekend 26, 27 January
+I managed to get the new grouped bar chart working with D3 V4, which isn't ideal but good enough. I'm very happy about this. Now I need to work on the dropdown menu in the line graph. The dropdown menu exists, it just doesn't create the lines when clicked on yet.
+
+#### Monday, 28 January
+I managed to make a line appear when the dropdown menu is clicked on, although at the end of the day I noticed that the line is moved up. I tried to figure this at home in the evening and finally realized it was because of the scale. Now the lines at the right data points. Tomorrow I will work on giving each line its own color and adding circles to the 2 added lines.
+
+#### Tuesday, 29 January
+Each line in the line graph has its own color and has circles at every data point. It's possible to hover over the circles in order to see what the exact value is at that point. Today I also cerated my LICENSE.md and changed the background color of my website.
+
+#### Wednesday, 30 January
+The Facts page and Contact page are finished. I wrote my README.md. I made some small aesthetic changes to my website.
