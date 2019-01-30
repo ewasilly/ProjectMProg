@@ -10,6 +10,7 @@ p {
   text-align: center;
 
 }
+
 h2 {
   font-family: courier;
   font-weight: bold;
@@ -29,11 +30,11 @@ h6 {
   text-align: center;
 }
 
-.col-10 {
+.col-9 {
   text-align: right;
 }
 
-.col-2 {
+.col-3 {
   text-align: left;
 }
 
