@@ -1,9 +1,3 @@
-
-
-The README.md should also acknowledge sources of external code, images and other materials that are in the repository but not created by yourself. Make sure that it is clear which directories are copyrighted by different creators.
-
-Also note that these materials have their own respective licenses. You should at the very least note this fact (again, in the README.md). Make sure you also check the licenses to see if you should make a special statement about the source of the materials.
-
 ## Ewa Sillem
  https://ewasilly.github.io/ProjectMProg/
 
