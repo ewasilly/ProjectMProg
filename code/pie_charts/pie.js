@@ -147,7 +147,7 @@ function pie_2(data) {
     radius = Math.min(width, height) / 3;
 
   var color = d3.scaleOrdinal()
-    .range(["#EA7070", "#FDC4B6", "#E59572", "#2694AB", "#4DBEDF", "#749051"]);
+    .range(["#fcd238", "#f5a800", "#f18407", "#db5400","#b12000", "#ff0000"]);
 
   var arc = d3.arc()
     .outerRadius(radius - 10)
@@ -269,7 +269,7 @@ function pie_3(data) {
   /* This pie chart shows the distribution of age groups
   across smokers */
   var data_age = [];
-  for (i = 5; i < 14; i++) {
+  for (i = 5; i < 13; i++) {
     data_age.push(parseInt(data['||Rokers'][i]));
   }
 
@@ -278,7 +278,7 @@ function pie_3(data) {
     radius = Math.min(width, height) / 2.5;
 
   var color = d3.scaleOrdinal()
-    .range(["#611716", "#FDC4B6", "#E59572", "#2694AB","#166061", "#4DBEDF", "#749051", "#D2C58C", "#EA7070"]);
+    .range(["#fcd238", "#f5a800", "#f18407", "#db5400","#b12000", "#ff0000", "#bf9b30", "#a67c00", "#ffbf00"]);
 
   var arc = d3.arc()
     .outerRadius(radius - 10)

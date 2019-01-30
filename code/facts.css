@@ -1,0 +1,22 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-family: courier;
+  font-size: 300%;
+
+}
+
+p {
+  font-family: courier;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+#facts {
+  font-family: courier;
+  font-size: 130%;
+  font-weight: bold;
+}

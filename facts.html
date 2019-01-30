@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href='code/facts.css'>
 </head>
 <body>
 
@@ -17,23 +18,38 @@
       <a class="navbar-brand" href="index.html">Smoking and education</a>
     </div>
   <ul class="navbar-nav">
-    <li class="nav-item">
+    <li class="nav-item" id="navitem1">
       <a class="nav-link" href="visualizations.html">Visualizations</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" id="navitem2">
       <a class="nav-link" href="facts.html">Facts</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" id="navitem3">
       <a class="nav-link" href="contact.html">Contact</a>
     </li>
   </ul>
 </nav>
-<br>
 
-<div class="container-fluid">
-  <h3>Smoking facts</h3>
-  <p>This page will contain facts about the consequences of smoking
-    and the severity of the problem.</p>
+<div class="container-fluid" id="intro index">
+  <div class="row">
+    <div class="col-sm" id="wow">
+      <img src="doc/smoking-1.jpg" alt="Smoking-life" style="width:600px;height:600px;">
+    </div>
+    <div class="col-sm-7" id="frontimg">
+      <h3><b>Smoking:</b> the <b>leading cause</b> of preventable <b>diseases</b> and <b>death</b> worldwide.</h3>
+      <ul id="facts"><li>Despite the life threatening consequences of smoking, <br>
+        over 1 in 5 Dutch citizens are a smoker.</li>
+      <li>Every year, 6 million deaths a year are caused worldwide by tobacco use,
+      and the expectation is that this number will have grown to 8 million by 2030.</li>
+      <li>Smokers die approximately 10 years earlier than than non-smokers.</li>
+      <li>The tobacco industry spent $9.5 billion in 2016 on advertising and promotion
+      of cigarettes and tobacco. This is equivalent to $26 million per day,
+      and more than $1 million per hour.</li>
+      <li>It is estimated that every day, over 3200 people aged under 18 smoke their first cigarette.</li>
+      <li>Based on research from 2015, almost 7 out of 10 adult smokers wanted to quit.</li>
+    </ul>
+    </div>
+  </div>
 </div>
 
 </body>
