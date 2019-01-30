@@ -1,7 +1,7 @@
 // Name: Ewa Sillem
 // Student number: 12149071
 // Description: This file contains all the javascript code for the scatterplot
-
+// Source: https://bl.ocks.org/Andrew-Reid/64a6c1892d1893009d2b99b8abee75a7
 function bar() {
   var width = 800;
   var height = 400;
