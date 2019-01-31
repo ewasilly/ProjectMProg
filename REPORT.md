@@ -1,4 +1,4 @@
-# Fianl Report
+# Final Report
 
 ## Short Description
 The website goal of 'Smoking and Education' is to give a better understanding of the association between smoking and education level. This can in turn create awareness among the Dutch population, and it can help organizations that organize smoking prevention programs to improve the programs.
@@ -42,17 +42,12 @@ The website goal of 'Smoking and Education' is to give a better understanding of
 - I had to let some ideas go because of a lack of time. For example, I wanted my line graph and pie chart to have a pretty transition, instead of just appearing on the page. Although I'm happy with the result, I would have liked to make my website look a bit more professional.
 - I also wanted to add tooltips to my bar chart, but I didn't want to risk messing up my work in the last day before the deadline.
 - Another thing that I had to let go of was that the last data point on the right of the line graph and the '7' in '2017' on the x-axis was partly cut off. I was able to fix this by making the svg bigger in the console, but when I tried to change this in my code nothing happened. I decided to leave it as it was due to little time left.
+- I had to write the grouped bar chart in d3 version 4, because it was taking me too long to translate the example which was in version 4 to version 5.
 
-
-Clearly describe challenges that your have met during development. Document all important changes that your have made with regard to your design document (from the PROCESS.md). Here, we can see how much you have learned in the past month.
-
-## Decision made
-Overall I am quite happy with my final result. I think it looks a lot like what I envisioned at first. I did not have to scratch a lot of ideas from my initial proposal, because I purposefully made a proposal of which I thought would be realistic for my to accomplish. Not that it was easy!!! I definitely challenged myself and learned a lot. In the week before the deadline we had to start thinking about what we wanted to keep and what we needed to let go. I still had to make a grouped bar chart and a working dropdown menu, which I had both never done before. I focused on getting those things working, and not thinking to much about the looks of the whole page. Once all the visualizations were working, I had 1 more day to work on perfecting the look of my website. I could have also used this time to add more tooltips, but I thought it would be too big of a risk (I might mess up my code) and I figured that the look of the website as a whole was more important at this point.
+## Decisions
+Overall I am quite happy with my final result. I think it looks a lot like what I envisioned at first. I did not have to scratch a lot of ideas from my initial proposal, because I purposefully made a proposal which I thought would be realistic for myself to accomplish. Not that it was easy!!! I definitely challenged myself and learned a lot. In the week before the deadline we had to start thinking about what we wanted to keep and what we needed to let go. I still had to make a grouped bar chart and a working dropdown menu, which I had both never done before. I focused on getting those things working, and not thinking to much about the looks of the whole page. Once all the visualizations were working, I had 1 more day to work on perfecting the look of my website. I could have also used this time to add more tooltips, but I thought it would be too big of a risk (I might mess up my code) and I figured that the look of the website as a whole was more important at this point.
 
 I also decided to use d3 v4 for the bar chart. The reason for this is that the example that I took from blocks was written in version 4, and I had spent 1,5 days on unsuccessfully trying to translate the code to version 5. I was freaking out and then a friend told me that it was allowed to use two different versions of d3 in one html page, so I started googling that. I managed to make both versions work on one html page, which is not perfect but it did the trick and everything works now!
 
 ## In an ideal world...
 If I would have been given more time I would have definitely done the transitions of the pie chart and line graph and added some cool effects. I would also add more linked views to the two smaller pie charts, maybe I could find some more information on those specific topics. A sunburst would also be nice. I didn't dare to try that for this project, but I would definitely like to try making that in the future. I would also try to translate the version 4 code of the grouped bar chart into version 5.
-
-
-Make sure the document is complete and reflects the final state of the application. The document will be an important part of your grade.
