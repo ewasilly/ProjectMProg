@@ -72,7 +72,7 @@ https://codepen.io/zakariachowdhury/pen/JEmjwq
 7. d3-time-format: https://github.com/d3/d3-time-format
 8. d3-tooltip: https://github.com/bumbeishvili/d3-tooltip
 9. d3-scale-chromatic: https://github.com/d3/d3-scale-chromatic
-10. Bootstrap dropdown: https://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp
+10. Dropdown: https://www.w3schools.com/howto/howto_css_dropdown.asp
 
 ##### Dataset
 1. https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83021NED/table?dl=F05B
