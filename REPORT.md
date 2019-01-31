@@ -31,12 +31,12 @@ The website goal of 'Smoking and Education' is to give a better understanding of
 - Bootstrap is used in the html files to make order in the position of the data visualizations. All the visualizations in the visualizations.html are together in one container-fluid. The bar chart is in its own column. Under that column I created a row with three columns in it, one for each pie chart. Under that row I created another row the line graph in the left column (right-aligned) and the dropdown menu in the right columns (left-aligned).
 
 ## Experienced challenges
-- The bar chart, I had to start all over in week 3
-- The linked views were tricky
-- Errors don't always show up
-- I had to learn how to not stress when many errors appear
-- I didn't really understand how data was loaded onto the page
-- I still find correct use functions difficult
+- The grouped bar chart, I had to start all over in week 3 because my bar chart turned out to be a normal bar chart and not a grouped bar chart.
+- The dropdown many was quite tricky for me. I made the line graph first with all the lines in it, and then applied the dropdown menu. It took me some time to figure out how to isolate one line and make the 'add_lines' function work.
+- Errors don't always show up, so it's sometimes hard to figure out what is going wrong.
+- I had to learn how to stay calm when many errors appeared
+- I didn't really understand how data was loaded onto the page at first
+- I still find correct use of functions rather difficult
 
 ## Changes I have made
 - I had to let some ideas go because of a lack of time. For example, I wanted my line graph and pie chart to have a pretty transition, instead of just appearing on the page. Although I'm happy with the result, I would have liked to make my website look a bit more professional.
